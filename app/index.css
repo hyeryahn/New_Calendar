@@ -1,0 +1,312 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+#root {
+    box-sizing: inherit;    
+    background-color: hsl(251, 36%, 9%);    
+    height: 100%;
+    padding: 10px;
+
+}
+
+#wrapperAll {
+    box-sizing: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+#headerWrapper {
+    box-sizing: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+
+#monthMarking {
+    font-weight: bold;
+    color: white;
+}
+
+button {
+    border: 1px solid #333;
+    border-radius: 15px;
+    padding: 4px 8px;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+}
+
+#bodyWrapper {
+    box-sizing: inherit;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#popWrapper{
+    box-sizing: inherit;
+    background-color: #333;
+    position: absolute;
+    border-radius: 15px;
+    width: 250px;
+    height: 450px;
+    top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pophead {
+    box-sizing: inherit;
+    height: 50px;
+}
+
+#popCloseButton {
+    border: none;
+    background-color: inherit;
+    position: relative;
+    top: 6px;
+    right: -140px;
+    color: white;
+}
+
+#popHeadText{
+    text-align: center;
+    font-size: 14px;
+    color: white;
+}
+
+#popBody {
+    box-sizing: inherit;
+    width: 80%;
+    height: 80%;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px 0;
+}
+
+.itemWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.itemColor {
+    width: 5px;
+    height: 25px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.itemSubject {
+    width: 85%;
+    color: white;
+}
+
+.bin {
+    background-image: url("./closed_bin.png");
+    background-size:cover;
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.bin:hover {
+    background-image: url("./opened_bin.png");
+}
+
+#popFooter {
+    box-sizing: inherit;
+    display: flex;
+    justify-content: center;
+}
+
+#addButton {
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    background: lightgray;
+    color: #333;
+    font-size: 20px;
+    padding: 0 8px;
+    margin: 10px;
+}
+
+/*addSchedule*/
+#viewAddSchedule{
+    box-sizing: border-box;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #333;
+    color: white;
+    top:-68px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
+.scheduleWrapper{
+    box-sizing: border-box;
+    padding: 15px 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#subjectWrapper {
+    position: relative;
+}
+
+.dateInput, #subject {
+    background-color: inherit;
+    border: none;
+    color: white;
+    font-size: 18px;
+}
+
+#subject {
+    width: 80%;
+    margin-bottom: 60px;
+}
+
+#chooseButton{
+    border: none;
+    width: 20px;
+    height: 20px;
+    background-color: hsl(180, 50%,70%);
+    margin: 0 40px;
+}
+
+#palette{
+    box-sizing: border-box;
+    position: absolute;
+    top: 40px;
+    right: 4px;
+    width: 110px;
+    height: 56px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 3px;
+    background-color: white;
+}
+
+.colorChip {
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 15px;
+    margin: 2px;
+}
+
+
+#memoWrapper {
+    box-sizing: border-box;
+    width: 100%;
+    height: 50%;
+    padding: 10px;
+}
+
+#memo{
+    box-sizing: border-box;
+    width: 100%;
+    height: 60%;
+    background-color: hsla(0,100%,100%,0.5);
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+
+#buttonWrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#cancelButton, #saveButton {
+    color:white;
+    background-color: inherit;
+    font-size: 18px;
+    padding: 5px 15px;
+}
+
+
+
+/*table section*/
+#table{
+    border-collapse: collapse;
+    color: #333;
+}
+
+th, td {
+    width: 40px;
+    border: 1px solid lightgray;
+    padding: 0;
+    margin: 0;
+    
+}
+
+th {
+    font-size: 13px;
+    text-align: left;
+}
+
+.dateBox {
+    box-sizing: inherit;
+    position: absolute;
+    top: 0;
+    width: 38px;
+    font-size: 12px;
+    padding-top: 2px;
+    padding-left: 2px;
+}
+
+.colorDiv {
+    box-sizing: border-box;
+    font-size: 10px;
+    color: #333;
+    height: 18px;
+    border: none;
+    margin: 0;
+    padding: 2px;
+}
+
+.colorDiv0{
+    position: absolute;
+    top: 18px;
+}
+.colorDiv1{
+    position: absolute;
+    top: 36px;
+}
+.colorDiv2{
+    position: absolute;
+    top: 54px;
+}
+
+
+td {
+    height: 80px;
+    position: relative;
+}
+
+.red {
+    color: red;
+}
